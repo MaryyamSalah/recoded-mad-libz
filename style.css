@@ -1,3 +1,67 @@
-/**
- * Your CSS goes here.
- */
+html {
+    height: 100%;
+}
+
+body {
+    background: #ff6e7f;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #bfe9ff, #ff6e7f);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #bfe9ff, #ff6e7f);
+    font-family: 'Akaya Telivigala', cursive;
+font-family: 'Roboto', sans-serif;
+height: 100%;
+display: flex;
+align-items: center;
+overflow-y: hidden;
+text-align: center;
+}
+
+main{
+    font-family: 'Akaya Telivigala', cursive;
+font-family: 'Roboto', sans-serif;
+}
+.container{
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    max-width: 60vw;
+    max-height: 60vh;
+    min-height: 60vh;
+    min-width: 60vw;
+    margin: auto;
+}
+
+form section{
+    padding: 0 1%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.input-group {
+    background-color: #b5dae9;
+   border-color:#b5dae9 ;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 10px;
+    padding: 10px;
+    margin: 5px;
+   
+}
+#button{
+    background: #ff6e7f;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #bfe9ff, #ff6e7f);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #bfe9ff, #ff6e7f);
+    font-family: 'Akaya Telivigala', cursive;
+font-family: 'Roboto', sans-serif;
+     border-radius: 20px;
+     border-style: none;
+     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 10px;
+     padding: 10px;
+     margin: 5px;
+     font-weight:bold;
+    
+    width: 50%;
+    font-size: 18px;
+}
