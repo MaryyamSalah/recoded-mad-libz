@@ -34,18 +34,18 @@ const form = new FormData(event.target);
 const userSubmission = Object.fromEntries(form);
 
   const story = `<h3>Your completed story :</h3>
-  <p>Today I went to the zoo. I saw a<span class="inserted-text">${userSubmission.adjective}</span>
-  <span class="inserted-text">${userSubmission.noun}</span> jumping up and down in its tree.
-  He <span class="inserted-text">${userSubmission.verb}</span><span class="inserted-text">${userSubmission.adverb}</span>
-  through the large tunnel that led to its <span class="inserted-text">${userSubmission.adjective}</span>
-  <span class="inserted-text">${userSubmission.noun}</span>. I got some peanuts and passed
-  them through the cage to a gigantic gray <span class="inserted-text">${userSubmission.noun}</span>
+  <p>Today I went to the zoo. I saw a<span class="inserted-text">${userSubmission.adjective_1}</span>
+  <span class="inserted-text">${userSubmission.noun_1}</span> jumping up and down in its tree.
+  He <span class="inserted-text">${userSubmission.verb_1}</span><span class="inserted-text">${userSubmission.adverb_1}</span>
+  through the large tunnel that led to its <span class="inserted-text">${userSubmission.adjective_2}</span>
+  <span class="inserted-text">${userSubmission.noun_2}</span>. I got some peanuts and passed
+  them through the cage to a gigantic gray <span class="inserted-text">${userSubmission.noun_3}</span>
   towering above my head. Feeding that animal made
-  me hungry. I went to get a <span class="inserted-text">${userSubmission.adjective}</span> scoop
+  me hungry. I went to get a <span class="inserted-text">${userSubmission.adjective_3}</span> scoop
   of ice cream. It filled my stomach. Afterwards I had to
-  <span class="inserted-text">${userSubmission.verb}</span><span class="inserted-text">${userSubmission.adverb}</span>  to catch our bus.
-  When I got home I <span class="inserted-text">${userSubmission.verb}</span> my
-  mom for a <span class="inserted-text">${userSubmission.adjective}</span> day at the zoo.</p>`;
+  <span class="inserted-text">${userSubmission.verb_2}</span><span class="inserted-text">${userSubmission.adverb_2}</span>  to catch our bus.
+  When I got home I <span class="inserted-text">${userSubmission.verb_3}</span> my
+  mom for a <span class="inserted-text">${userSubmission.adjective_4}</span> day at the zoo.</p>`;
    
   storySection.innerHTML += story;
   storySection.classList.remove('hide')

@@ -11,7 +11,7 @@ font-family: 'Roboto', sans-serif;
 height: 100%;
 display: flex;
 align-items: center;
-overflow-y: hidden;
+overflow-y: scroll;
 text-align: center;
 }
 
@@ -35,9 +35,10 @@ form section{
     padding: 0 1%;
     margin-top: 20px;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     justify-content: center;
+    flex-flow: row wrap;
+    
+    
 }
 
 .input-group {
@@ -46,7 +47,10 @@ form section{
     border-radius: 20px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 10px;
     padding: 10px;
-    margin: 5px;
+    margin: 7px;
+    width:25%;
+    
+    
    
 }
 #button{
