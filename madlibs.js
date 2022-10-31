@@ -27,11 +27,30 @@
  * Please go through this lesson: https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/regular-expressions/
  */
 
-
+const storySection = document.getElementById('completed-story');
 const parseStory = (event)=> {
-  alert ("hey") 
   event.preventDefault();/*pevent to reloading page*/
-  
+const form = new FormData(event.target);
+const userSubmission = Object.fromEntries(form);
+
+  const story = `<h3>Your completed story :</h3>
+  <p>Today I went to the zoo. I saw a<span class="inserted-text">${userSubmission.adjective}</span>
+  <span class="inserted-text">${userSubmission.noun}</span> jumping up and down in its tree.
+  He <span class="inserted-text">${userSubmission.verb}</span><span class="inserted-text">${userSubmission.adverb}</span>
+  through the large tunnel that led to its <span class="inserted-text">${userSubmission.adjective}</span>
+  <span class="inserted-text">${userSubmission.noun}</span>. I got some peanuts and passed
+  them through the cage to a gigantic gray <span class="inserted-text">${userSubmission.noun}</span>
+  towering above my head. Feeding that animal made
+  me hungry. I went to get a <span class="inserted-text">${userSubmission.adjective}</span> scoop
+  of ice cream. It filled my stomach. Afterwards I had to
+  <span class="inserted-text">${userSubmission.verb}</span><span class="inserted-text">${userSubmission.adverb}</span>  to catch our bus.
+  When I got home I <span class="inserted-text">${userSubmission.verb}</span> my
+  mom for a <span class="inserted-text">${userSubmission.adjective}</span> day at the zoo.</p>`;
+   
+  storySection.innerHTML += story;
+  storySection.classList.remove('hide')
+  //storySection.innerHTML +=story  //equal itself and whatever the story is
+ // storySection.classList.remove('hide')
 }
 
 /**
@@ -45,8 +64,8 @@ const parseStory = (event)=> {
  *
  * You'll want to use the results of parseStory() to display the story on the page.
  */
-getRawStory()
+/*getRawStory()
   .then(parseStory)
   .then((processedStory) => {
     console.log(processedStory);
-  });
+  });*/
